@@ -1,0 +1,2 @@
+import { describe,expect,it } from 'vitest';import { getSummary } from '../utils/analytics';import type { FoodQualityRecord } from '../types/quality';
+describe('analytics',()=>it('calculates summary from current records',()=>{const records=[{status:'PASS',quality_score:100,product_name:'Milk'},{status:'FAIL',quality_score:75,product_name:'Milk'}] as FoodQualityRecord[];expect(getSummary(records)).toMatchObject({total:2,pass:1,fail:1,passRate:50,averageScore:87.5,products:1})}));

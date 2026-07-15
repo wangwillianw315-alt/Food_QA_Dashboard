@@ -23,6 +23,8 @@ See the full [portfolio case study](docs/portfolio-case-study.md).
 - Independent parameter assessment with PASS, WARNING, FAIL and INCOMPLETE outcomes
 - Live dashboard metrics and six responsive Recharts visualisations
 - Product-specific pH and water activity trends with specification lines and warning zones
+- Editable product limits and warning margins with immediate sample reassessment
+- Browser-local standards persistence, validation, cancellation and one-click default restoration
 - Product, batch, status, date-range and global text filters
 - Sortable, paginated Data Explorer with detailed sample assessment drawer
 - Export of the current filtered dataset to CSV
@@ -86,6 +88,8 @@ Excel `.xlsx` workbooks can use different column labels such as `Sample ID`, `Lo
 Product names must match one of the four demonstration standards; letter casing is normalised automatically. Unknown products are safely marked INCOMPLETE with a score of 0 because no approved comparison can be made.
 
 Uploaded records are retained only in the current browser session so an accidental refresh does not lose the active analysis. They are not sent to a server. Restoring the sample dataset clears the saved session upload.
+
+Custom demonstration standards are stored separately in browser local storage and remain available across sessions on the same browser. Saving or restoring standards immediately recalculates status, score and issue lists for the active records. Product identities cannot be edited, and invalid ranges are rejected before any assessment changes.
 
 ## Quality assessment
 

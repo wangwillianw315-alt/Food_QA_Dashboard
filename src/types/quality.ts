@@ -11,7 +11,9 @@ export interface FoodQualityRecord {
 export interface QualityStandard {
   productName: string; ph: { min: number; max: number }; waterActivity: { max: number };
   moisture: { min: number; max: number }; temperature: { max: number };
+  warningMarginPercent: number;
 }
+export type QualityStandardsMap = Record<string, QualityStandard>;
 export interface ParseIssue { row: number; message: string; }
 export interface ParseResult { records: FoodQualityRecord[]; errors: ParseIssue[]; totalRows: number; }
 export interface DataSourceInfo { name: string; importedAt: string; validRows: number; rejectedRows: number; isSample: boolean; }

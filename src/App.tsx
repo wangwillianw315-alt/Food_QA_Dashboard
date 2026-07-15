@@ -25,7 +25,7 @@ function Shell(){
     <button onClick={()=>document.getElementById('main-content')?.focus()} className="sr-only z-[100] rounded bg-white p-3 text-navy-800 focus:not-sr-only focus:fixed focus:left-3 focus:top-3">Skip to main content</button>
     <header className="bg-white"><Header/><Navigation page={page} onChange={navigate}/></header>
     <main id="main-content" tabIndex={-1} className="mx-auto max-w-[1500px] px-4 py-7 sm:px-6 lg:px-8 focus:outline-none">{loading?<LoadingState/>:loadError?<ErrorMessage message={loadError} onRetry={retry}/>:<Suspense fallback={<LoadingState/>}>{content}</Suspense>}</main>
-    <footer className="mt-10 border-t border-slate-200 bg-white py-5 text-center text-xs text-slate-500">Food QA Dashboard - Demonstration data only - All processing remains in your browser</footer>
+    <footer className="mt-10 border-t border-slate-200 bg-white py-5 text-center text-xs text-slate-500">Food QA Dashboard v1.4 - Demonstration data only - All processing remains in your browser</footer>
   </div>;
 }
 

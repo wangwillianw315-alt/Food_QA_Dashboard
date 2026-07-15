@@ -1,5 +1,7 @@
 # Food QA Dashboard
 
+[![Quality checks](https://github.com/wangwillianw315-alt/Food_QA_Dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/wangwillianw315-alt/Food_QA_Dashboard/actions/workflows/ci.yml)
+
 A portfolio-ready browser-based food quality analysis application for Food Science students, QA/QC personnel and Food Technologists. Import production test data, assess every sample against product-specific demonstration limits, investigate issues and review batch trends. All processing happens locally in the browser.
 
 **Live demo:** https://food-qa-dashboard-tianyi.netlify.app
@@ -20,6 +22,7 @@ See the full [portfolio case study](docs/portfolio-case-study.md).
 - 64-row built-in dataset covering Milk, Yoghurt, Protein Bar and Fruit Juice
 - Independent parameter assessment with PASS, WARNING, FAIL and INCOMPLETE outcomes
 - Live dashboard metrics and six responsive Recharts visualisations
+- Product-specific pH and water activity trends with specification lines and warning zones
 - Product, batch, status, date-range and global text filters
 - Sortable, paginated Data Explorer with detailed sample assessment drawer
 - Export of the current filtered dataset to CSV

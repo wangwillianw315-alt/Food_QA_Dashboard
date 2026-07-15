@@ -24,6 +24,7 @@ The application addresses three practical questions:
 - Separate PASS, WARNING, FAIL and INCOMPLETE outcomes.
 - Produce a transparent score with named failed, warning and missing parameters.
 - Allow QA reviewers to move from a portfolio-level overview to one sample's value-versus-limit detail.
+- Let reviewers edit demonstration limits and product warning margins, then transparently reassess every active record.
 - Keep uploaded data local to the browser session.
 
 ## Demonstration investigation
@@ -61,7 +62,7 @@ Scoring begins at 100, deducting 25 for each failure, 5 for each warning and 15 
 
 ## Verification
 
-- 25 automated tests
+- 36 automated tests
 - Strict TypeScript production build
 - 64 built-in rows parsed without errors
 - Desktop screenshots captured from the running application
@@ -71,4 +72,4 @@ Scoring begins at 100, deducting 25 for each failure, 5 for each warning and 15 
 
 The standards are illustrative and must not be treated as regulatory or commercial limits. The current release accepts CSV and `.xlsx` workbooks but intentionally excludes legacy `.xls`, authentication, cloud storage and PDF reporting.
 
-The strongest next product increment is product-specific warning-margin configuration and specification bands on trend charts, followed by editable approved standards and SPC control charts.
+The strongest next product increment is SPC control-chart support with process-centre and control-limit calculations, followed by governed standard approval history and PDF reporting.
